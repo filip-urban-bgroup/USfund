@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Company Name</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f5f0eb;
+            background-image: linear-gradient(135deg, #f5f0eb 0%, #e8e0d5 100%);
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(to bottom, #ffffff, #f8f4f0);
+            box-shadow: 0 4px 12px rgba(139, 99, 71, 0.1);
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            max-width: 220px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.02);
+        }
+
+        .content-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .main-section {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 2.5rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 6px 24px rgba(139, 99, 71, 0.1);
+            border: 1px solid rgba(139, 99, 71, 0.1);
+        }
+
+        .secondary-sections {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 8rem; /* Space for footer */
+        }
+
+        .section-half {
+            flex: 1;
+            padding: 2.5rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 6px 24px rgba(139, 99, 71, 0.1);
+            border: 1px solid rgba(139, 99, 71, 0.1);
+        }
+
+        .section-half h2 {
+            font-family: 'Playfair Display', serif;
+            color: #1a2634;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .section-half h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: #8b6347;
+            border-radius: 2px;
+        }
+
+        .section-half p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: #5d4637;
+            line-height: 1.8;
+        }
+
+        .footer {
+            background: linear-gradient(to bottom, #4a3728, #2c1810);
+            color: #f5f0eb;
+            text-align: center;
+            padding: 2rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 12px rgba(139, 99, 71, 0.2);
+        }
+
+        .footer p {
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            .secondary-sections {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .section-half {
+                padding: 1.5rem;
+            }
+
+            .section-half h2 {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Subtle animation for content */
+        .about-section {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="your-logo.png" alt="Company Logo" class="logo">
+    </header>
+
+    <div class="content-wrapper">
+        <main class="main-section">
+            <h1>O Nás</h1>
+            <p>Welcome to our company! We are dedicated to providing exceptional services/products to our customers.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Our mission is to deliver outstanding value while maintaining the highest standards of quality and customer satisfaction.</p>
+        </main>
+
+        <div class="secondary-sections">
+            <section class="section-half">
+                <h2>Naše Služby</h2>
+                <p>Discover our comprehensive range of services designed to meet your needs. We pride ourselves on delivering excellence in every project we undertake.</p>
+                <p>From initial consultation to final delivery, we ensure a seamless and professional experience.</p>
+            </section>
+
+            <section class="section-half">
+                <h2>Kontakt</h2>
+                <p>Get in touch with us to discuss your requirements. Our team is ready to assist you with any inquiries you may have.</p>
+                <p>Email: info@company.com<br>
+                Phone: +420 123 456 789<br>
+                Address: Your Street 123, Prague</p>
+            </section>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+</body>
+</html> 
